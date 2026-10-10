@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="3RD Dimension services: apartments, commercial complexes, multistory buildings, roads and bridges."
+    />
+    <title>3RD Dimension | Our Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#home" aria-label="3RD Dimension home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" role="img">
+              <path d="M5 31V9l15 14V9l15 22" />
+              <path d="M5 31h30" />
+            </svg>
+          </span>
+          <span class="brand-name">3RD<span>Dimension</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+          <a href="index.html#home">Home</a>
+          <a href="services.html" aria-current="page" class="is-active">Services</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#about">About</a>
+          <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="services-hero" aria-labelledby="services-page-title">
+        <div class="services-hero-bg">
+          <a href="#apartments" class="hero-img hero-img-1" aria-label="View Apartments service"><span>Apartments</span></a>
+          <a href="#commercial-complex" class="hero-img hero-img-2" aria-label="View Commercial Complex service"><span>Commercial</span></a>
+          <a href="#multistory-building" class="hero-img hero-img-3" aria-label="View Multistory Building service"><span>Multistory</span></a>
+          <a href="#roads" class="hero-img hero-img-4" aria-label="View Roads service"><span>Roads</span></a>
+          <a href="#bridge" class="hero-img hero-img-5" aria-label="View Bridge service"><span>Bridge</span></a>
+        </div>
+        <div class="services-hero-shade" aria-hidden="true"></div>
+        <div class="container services-hero-inner">
+          <h1 id="services-page-title">What we build<br /><em>for you.</em></h1>
+          <p class="services-hero-copy">
+            From homes to highways, one team plans and builds it all. Hover the photos
+            or click one to jump to details — or use the Services bar below.
+          </p>
+        </div>
+      </section>
+
+      <div class="services-toolbar">
+        <div class="container services-toolbar-inner">
+          <button
+            class="button button-light sidebar-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="services-sidebar"
+            aria-label="Show services options"
+          >
+            <span class="toggle-label">Services</span>
+            <span class="toggle-chevron" aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container services-layout sidebar-collapsed">
+        <aside class="sidebar" id="services-sidebar" aria-label="Services menu">
+          <div class="sidebar-head">
+            <p>Choose a service</p>
+            <button
+              class="sidebar-close"
+              type="button"
+              aria-label="Close services menu"
+              aria-controls="services-sidebar"
+            >
+              ✕
+            </button>
+          </div>
+          <nav aria-label="Services list">
+            <a href="#apartments"><span class="side-num">01</span> Apartments <span class="side-arrow" aria-hidden="true">→</span></a>
+            <a href="#commercial-complex"><span class="side-num">02</span> Commercial Complex <span class="side-arrow" aria-hidden="true">→</span></a>
+            <a href="#multistory-building"><span class="side-num">03</span> Multistory Building <span class="side-arrow" aria-hidden="true">→</span></a>
+            <a href="#roads"><span class="side-num">04</span> Roads <span class="side-arrow" aria-hidden="true">→</span></a>
+            <a href="#bridge"><span class="side-num">05</span> Bridge <span class="side-arrow" aria-hidden="true">→</span></a>
+          </nav>
+        </aside>
+
+        <div class="services-content">
+          <article class="service-detail" id="apartments" aria-labelledby="apartments-title">
+            <span class="service-number">01</span>
+            <h2 id="apartments-title">Apartments</h2>
+            <p>
+              Comfortable, well-planned apartments for everyday living. We handle design,
+              structure, finishing and handover so families can move in with confidence.
+            </p>
+            <ul>
+              <li>Floor planning and 3D design</li>
+              <li>RCC structure and quality finishing</li>
+              <li>Plumbing, electrical and tiling work</li>
+            </ul>
+            <a class="text-link" href="#contact">Ask about apartments <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-detail" id="commercial-complex" aria-labelledby="commercial-title">
+            <span class="service-number">02</span>
+            <h2 id="commercial-title">Commercial Complex</h2>
+            <p>
+              Shops, offices and mixed-use spaces built for business. We focus on strong
+              structure, easy movement and a clean, professional look.
+            </p>
+            <ul>
+              <li>Complex layout and shop / office partitioning</li>
+              <li>Parking, lifts and fire-safety planning</li>
+              <li>Exterior and interior finishing</li>
+            </ul>
+            <a class="text-link" href="#contact">Ask about commercial <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-detail" id="multistory-building" aria-labelledby="multistory-title">
+            <span class="service-number">03</span>
+            <h2 id="multistory-title">Multistory Building</h2>
+            <p>
+              Safe, durable high-rise construction with careful foundation and column
+              work. We manage every floor from piling to rooftop.
+            </p>
+            <ul>
+              <li>Soil test, piling and foundation</li>
+              <li>Column, beam and slab construction</li>
+              <li>Lift core, staircase and rooftop works</li>
+            </ul>
+            <a class="text-link" href="#contact">Ask about multistory <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-detail" id="roads" aria-labelledby="roads-title">
+            <span class="service-number">04</span>
+            <h2 id="roads-title">Roads</h2>
+            <p>
+              Durable village, town and city roads. We prepare the base, ensure proper
+              drainage and finish with smooth, long-lasting surfacing.
+            </p>
+            <ul>
+              <li>Earthwork, sub-base and compaction</li>
+              <li>Drainage and culvert support</li>
+              <li>Carpeting, brick or concrete finishing</li>
+            </ul>
+            <a class="text-link" href="#contact">Ask about roads <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-detail" id="bridge" aria-labelledby="bridge-title">
+            <span class="service-number">05</span>
+            <h2 id="bridge-title">Bridge</h2>
+            <p>
+              Small to medium bridges and culverts that connect communities. Built with
+              strong supports and careful load planning for long life.
+            </p>
+            <ul>
+              <li>Site survey and load planning</li>
+              <li>Pillar, abutment and deck construction</li>
+              <li>Railing, approach road and safety works</li>
+            </ul>
+            <a class="text-link" href="#contact">Ask about bridges <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+
+      <section class="contact section-space" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <p class="eyebrow light-eyebrow"><span></span> Your next chapter</p>
+          <h2 id="contact-title">Have a project<br />in mind?</h2>
+          <p>Tell us a little about what you are planning. We would be glad to talk it through.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:01606958058">01606958058</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=debratul369@gmail.com&su=Construction%20project%20enquiry"
+                target="_blank"
+                rel="noopener"
+                >debratul369@gmail.com</a
+              >
+            </li>
+            <li>
+              <span class="contact-label">Address</span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Wahid%20View%20Mention%20Airport%20Road%20Sylhet%20Sadar%20Sylhet"
+                target="_blank"
+                rel="noopener"
+                >Wahid View Mention, Airport Road, Sylhet Sadar, Sylhet</a
+              >
+            </li>
+          </ul>
+          <a
+            class="button button-light"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=debratul369@gmail.com&su=Construction%20project%20enquiry"
+            target="_blank"
+            rel="noopener"
+            >Get in touch <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand footer-brand" href="index.html#home" aria-label="3RD Dimension, back to home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 31V9l15 14V9l15 22"/><path d="M5 31h30"/></svg></span>
+          <span class="brand-name">3RD<span>Dimension</span></span>
+        </a>
+        <a class="back-top" href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="container footer-bottom"><p>© <span id="current-year">2026</span> 3RD Dimension</p><p>Built with care. Built to last.</p></div>
+    </footer>
+  </body>
+</html>
