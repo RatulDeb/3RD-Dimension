@@ -215,6 +215,14 @@ h2 em { color: var(--clay); }
 .hero-img span { opacity: 0; transform: translateY(8px); background: rgba(20,31,26,.8); color: #fff; border: 1px solid rgba(255,255,255,.28); padding: 8px 12px; font: 700 11px var(--heading-font); letter-spacing: .12em; text-transform: uppercase; transition: opacity .25s ease, transform .25s ease; }
 .hero-img:hover, .hero-img:focus-visible { filter: saturate(1.1) brightness(1.05) contrast(1.03); }
 .hero-img:hover span, .hero-img:focus-visible span { opacity: 1; transform: none; }
+/* Projects page header — different photos + different interaction (color reveal + zoom) */
+.proj-img-1 { background-image: url("https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80"); }
+.proj-img-2 { background-image: url("https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80"); }
+.proj-img-3 { background-image: url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"); }
+.proj-img-4 { background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"); }
+.proj-img-5 { background-image: url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80"); }
+.projects-hero-bg .hero-img { filter: grayscale(45%) brightness(.82) contrast(1.02); transform: scale(1); }
+.projects-hero-bg .hero-img:hover, .projects-hero-bg .hero-img:focus-visible { filter: grayscale(0%) saturate(1.15) brightness(1.05); transform: scale(1.045); z-index: 2; }
 .services-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,31,26,.58) 0%, rgba(20,31,26,.32) 55%, rgba(20,31,26,.12) 100%), linear-gradient(0deg, rgba(20,31,26,.28), transparent 60%); }
 .services-hero-inner { position: relative; z-index: 1; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
 .services-hero-inner h1 { max-width: 720px; margin-bottom: 16px; font-size: clamp(42px, 6vw, 68px); font-weight: 600; letter-spacing: -.06em; line-height: 1.08; }
@@ -256,3 +264,49 @@ h2 em { color: var(--clay); }
 .service-detail > p { max-width: 640px; color: var(--muted); font-size: 14px; }
 .service-detail ul { margin: 16px 0 20px; padding-left: 18px; color: var(--ink); font-size: 13px; }
 .service-detail li + li { margin-top: 6px; }
+
+/* Projects page — built examples */
+.built-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 20px 0 20px; }
+.built-card { border: 1px solid var(--line); background: #fbfbfa; overflow: hidden; }
+.built-photo { min-height: 190px; background-color: #b7b7a9; background-size: cover; background-position: center; }
+.built-body { padding: 18px 18px 16px; }
+.built-body h3 { margin: 0 0 6px; font-size: 17px; letter-spacing: -.03em; }
+.built-meta { margin: 0 0 10px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
+.built-body ul { margin: 0 0 4px; padding-left: 18px; color: var(--ink); font-size: 13px; }
+.built-body li + li { margin-top: 5px; }
+
+/* How we build */
+.how-section { background: #eeefea; }
+.how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.how-card { position: relative; border: 1px solid #d5d8d1; background: #fff; overflow: hidden; }
+.how-photo { min-height: 180px; background-color: #9f9d8d; background-size: cover; background-position: center; }
+.how-body { position: relative; padding: 24px 22px 22px; }
+.how-body .service-number { position: absolute; top: 24px; right: 20px; color: #929a92; font: 600 11px var(--heading-font); }
+.how-body h3 { margin: 0 0 10px; padding-right: 32px; font-size: 19px; letter-spacing: -.035em; }
+.how-body > p { color: var(--muted); font-size: 13px; }
+.how-body ul { margin: 12px 0 16px; padding-left: 18px; font-size: 13px; }
+.how-body li + li { margin-top: 6px; }
+#how-we-build { scroll-margin-top: 90px; }
+
+/* Engineers — which engineer does what */
+.engineers-section { background: var(--paper); }
+.engineer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.engineer-card { border: 1px solid var(--line); background: #fff; overflow: hidden; }
+.engineer-photo { display: block; width: 100%; height: 190px; object-fit: cover; background: #b7b7a9; }
+.engineer-body { padding: 20px 20px 18px; }
+.engineer-field { margin: 0 0 8px; color: var(--clay); font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.engineer-body h3 { margin: 0 0 10px; font-size: 17px; letter-spacing: -.03em; line-height: 1.35; }
+.engineer-body ul { margin: 0; padding-left: 18px; color: #4c544e; font-size: 13px; }
+.engineer-body li + li { margin-top: 6px; }
+#engineers { scroll-margin-top: 90px; }
+#proj-apartments, #proj-commercial, #proj-multistory, #proj-roads, #proj-bridge { scroll-margin-top: 150px; }
+
+@media (max-width: 960px) {
+  .how-grid, .engineer-grid { grid-template-columns: 1fr 1fr; }
+  .built-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .how-grid, .engineer-grid, .built-grid { grid-template-columns: 1fr; }
+  .built-photo, .how-photo { min-height: 200px; }
+  .engineer-photo { height: 200px; }
+}
